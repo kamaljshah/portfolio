@@ -1,2 +1,2 @@
 # portfolio
-Personal portfolio describing the professional work and other extra curricular achievements continuously updated..
+Personal portfolio describing the professional work and other extra curricular activites. This site is updated as new projects or achievements are conquered...
