@@ -1,10 +1,14 @@
 // Large Widescreens
 @include mediaXl {
-    
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 // Desktops and Normal size laptops
 @include mediaLg {
-
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 // Small laptops and Tablets
 @include mediaMd {
@@ -56,6 +60,10 @@
 
         grid-template-columns: 1fr;
     }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 // Smart phones and foldable phones
@@ -70,5 +78,9 @@
             margin-top: 1rem;
             font-size: 5rem;
         }
+    }
+
+    .projects {
+        grid-template-columns:  1fr;
     }
 }
