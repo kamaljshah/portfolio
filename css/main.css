@@ -90,6 +90,9 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+.nav-item:nth-child(5) {
+  transition-delay: 0.5s; }
+
 * {
   box-sizing: border-box; }
 
@@ -114,6 +117,17 @@ body {
       z-index: -1;
       background: rgba(68, 68, 68, 0.9); }
 
+.glow {
+  font-size: 1.5rem;
+  color: #1ae7ee;
+  animation: glow 1s ease-in-out infinite alternate; }
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073; }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6; } }
+
 h1,
 h2,
 h3 {
@@ -122,7 +136,23 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 4rem; }
+  h1.lg-heading-index,
+  h2.lg-heading-index,
+  h3.lg-heading-index {
+    font-size: 1.5rem; }
+  h1.lg-heading-Self-Driving-Car,
+  h2.lg-heading-Self-Driving-Car,
+  h3.lg-heading-Self-Driving-Car {
+    font-size: 4rem; }
+  h1.lg-heading-Robotics-learn-by-doing,
+  h2.lg-heading-Robotics-learn-by-doing,
+  h3.lg-heading-Robotics-learn-by-doing {
+    font-size: 4rem; }
+  h1.lg-heading-WebGL_Basics,
+  h2.lg-heading-WebGL_Basics,
+  h3.lg-heading-WebGL_Basics {
+    font-size: 3rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
@@ -170,6 +200,14 @@ main {
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
+  .about-info .self_driving {
+    grid-area: bio;
+    margin: auto;
+    font-size: 1.5rem; }
+  .about-info .webgl_basics {
+    grid-area: bio;
+    margin: auto;
+    font-size: 1.5rem; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -180,6 +218,39 @@ main {
     background: #515151;
     padding: 0.5rem;
     border-bottom: #1ae7ee 5px solid; }
+
+.robotics-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'roboticsimage robotics robotics';
+  grid-template-columns: repeat(3, 1fr); }
+  .robotics-info .robotics-image {
+    grid-area: roboticsimage;
+    margin: auto;
+    border: #1ae7ee 3px solid; }
+  .robotics-info .robotics {
+    grid-area: robotics;
+    font-size: 1.5rem; }
+  .robotics-info .robotics_learn_by_doing {
+    grid-area: robotics;
+    margin: auto;
+    font-size: 1.5rem; }
+  .robotics-info .job {
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: #1ae7ee 5px solid; }
+
+.index-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'indexcontent index';
+  grid-template-columns: repeat(2, 1fr); }
+  .index-info .index {
+    grid-area: index;
+    font-size: 2.5rem; }
+  .index-info .indexcontent {
+    grid-area: indexcontent;
+    font-size: 1.5rem; }
 
 .projects {
   display: grid;

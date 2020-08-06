@@ -16,6 +16,24 @@ body {
     line-height: 1.5;
 }
 
+.glow {
+    font-size: 1.5rem;
+    color: $secondary-color;
+  
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  } 
+     
+}
+
 // Headings
 h1, 
 h2,
@@ -24,7 +42,23 @@ h3 {
     font-weight: 400;
 
     &.lg-heading {
-        font-size: 6rem;
+        font-size: 4rem;
+    }
+
+    &.lg-heading-index {
+        font-size: 1.5rem;
+    }
+
+    &.lg-heading-Self-Driving-Car {
+        font-size: 4rem;
+    }
+
+    &.lg-heading-Robotics-learn-by-doing {
+        font-size: 4rem;
+    }
+
+    &.lg-heading-WebGL_Basics {
+        font-size: 3rem;
     }
 
     &.sm-heading {
@@ -33,6 +67,7 @@ h3 {
         background: rgba(lighten($primary-color , 2), 0.5);
     }
 }
+
 
 a {
     color: #fff;
@@ -95,6 +130,18 @@ main {
     font-size: 1.5rem;
 }
 
+.self_driving {
+    grid-area: bio;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+.webgl_basics {
+    grid-area: bio;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
 .job-1 {
     grid-area: job1;
 }
@@ -113,6 +160,58 @@ main {
     border-bottom: $secondary-color 5px solid;
 }
 }
+
+    .robotics-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+    'roboticsimage robotics robotics';
+    grid-template-columns: repeat(3, 1fr);
+
+    .robotics-image {
+    grid-area: roboticsimage;
+    margin: auto;
+    //border-radius: 50%;
+    border: $secondary-color 3px solid;
+}
+
+.robotics {
+    grid-area: robotics;
+    font-size: 1.5rem;
+}
+
+.robotics_learn_by_doing {
+    grid-area: robotics;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+.job {
+    background: lighten($primary-color, 5);
+    padding:  0.5rem;
+    border-bottom: $secondary-color 5px solid;
+}
+}
+
+    .index-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+    'indexcontent index';
+    grid-template-columns: repeat(2, 1fr);
+
+
+.index {
+    grid-area: index;
+    font-size: 2.5rem;
+}
+
+.indexcontent {
+    grid-area: indexcontent;
+    font-size: 1.5rem;
+}
+}
+
 // Projects and Contributions
 .projects {
     display: grid;
