@@ -6,7 +6,7 @@ main();
 // Start here
 //
 function main() {
-  const canvas = document.querySelector('#glcanvas');
+  const canvas = document.querySelector('#glcanvas3');
   const gl = canvas.getContext('webgl');
   
 
@@ -46,7 +46,7 @@ function main() {
   
   const buffers = initBuffers(gl);
 
-  const texture = loadTexture(gl, 'cubetexture.png');
+  const texture = loadTexture(gl, '/img/WebGL_Basics/S6_Textures/cubetexture.png');
 
   var then = 0;
 
