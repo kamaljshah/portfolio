@@ -52,7 +52,7 @@ function main() {
   //const texture = loadTexture(gl, 'cubetexture.png');
   const texture = initTexture(gl);
 
-  const video = setupVideo('Firefox.mp4');
+  const video = setupVideo('/img/WebGL_Basics/S8_Animating_Textures/Firefox.mp4');
 
   var then = 0;
 

@@ -255,11 +255,23 @@ main {
 .projects {
   display: grid;
   grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(4, 1fr); }
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
     .projects img:hover {
+      opacity: 0.5;
+      border-color: #1ae7ee;
+      transition: all 0.5s ease-out; }
+
+.WebGL_projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(4, 1fr); }
+  .WebGL_projects img {
+    width: 100%;
+    border: 3px #fff solid; }
+    .WebGL_projects img:hover {
       opacity: 0.5;
       border-color: #1ae7ee;
       transition: all 0.5s ease-out; }

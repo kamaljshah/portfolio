@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/c1095fcd87.js" crossorigin="anonymous"></script>
 
-
+    <link rel="stylesheet" href="css/webgl.css">
     <link rel="stylesheet" href="css/main.css">
+    
     <title>Kamal Shah WebGL Basics</title>
 </head>
 
@@ -25,12 +26,23 @@
             <h3 class="text-secondary">WebGL Basics ...</h3>
             <p> WebGL short modules to gain insight into 3D display of images over the web. These set of files are a forerunner to developing 3D models of 3D scans.  </p>
         </div>
-        <div class="projects">
+        <div class="WebGL_projects">
             <div class="item">
                 <!-- 1 S8_Animating Textures in  WebGL -->
-                <a target="_blank" href="img/WebGL_Basics/S8_Animating_Textures/S8_Animating_Textures.html">
-                    <img src="img/WebGL_Basics/WebGL_Image.JPG" alt="Animating Textures in WebGL">
-                </a>
+                <canvas id="glcanvas" ></canvas>
+                <script src="/img/WebGL_Basics/gl-matrix.js"></script>
+                <script src="/img/WebGL_Basics/S8_Animating_Textures/setupVideo.js"></script>
+                <script src="/img/WebGL_Basics/S8_Animating_Textures/sources.js"></script>
+                
+                <script src="/img/WebGL_Basics/S8_Animating_Textures/initTexture.js"></script>
+                
+                <script src="/img/WebGL_Basics/S8_Animating_Textures/loadTexture.js"></script>
+                <script src="/img/WebGL_Basics/S8_Animating_Textures/initShaderProgram.js"></script>
+                <script src="/img/WebGL_Basics/S8_Animating_Textures/loadShader.js"></script>
+                <script src="/img/WebGL_Basics/S8_Animating_Textures/initBuffers.js"></script>
+                <script src="/img/WebGL_Basics/S8_Animating_Textures/drawScene.js"></script>
+                <script src="/img/WebGL_Basics/S8_Animating_Textures/webgl-demo.js"></script>
+
                 <a class="btn-light">
                     <i class="fas fa-eye"></i> Animating Textures
                 </a>
@@ -38,11 +50,18 @@
                     <i class="fab fa-github"></i> Github link
                 </a>
             </div>
+
             <!-- 2 S7_Lighting in WebGL -->
             <div class="item">
-                <a target="_blank" href="img/WebGL_Basics/S7_Lighting/S7_Lighting.html">
-                    <img src="img/WebGL_Basics/S7_Lighting/S7_Lighting.JPG" alt="Lighting in WebGL">
-                </a>
+                <canvas id="glcanvas2" ></canvas>
+                <script src="/img/WebGL_Basics/gl-matrix.js"></script>
+                <script src="/img/WebGL_Basics/S7_Lighting/sources.js"></script>
+                <script src="/img/WebGL_Basics/S7_Lighting/loadTexture.js"></script>
+                <script src="/img/WebGL_Basics/S7_Lighting/initShaderProgram.js"></script>
+                <script src="/img/WebGL_Basics/S7_Lighting/loadShader.js"></script>
+                <script src="/img/WebGL_Basics/S7_Lighting/initBuffers.js"></script>
+                <script src="/img/WebGL_Basics/S7_Lighting/drawScene.js"></script>
+                <script src="/img/WebGL_Basics/S7_Lighting/webgl-demo.js"></script>
                 <a href="" class="btn-light">
                     <i class="fas fa-eye"></i> Lighting in WebGL
                 </a>
@@ -52,9 +71,16 @@
             </div>
             <!-- 3 S6_Textures in WebGL -->
             <div class="item">
-                <a target="_blank" href="img/WebGL_Basics/S6_Textures/S6_Textures.html">
-                    <img src="img/WebGL_Basics/S6_Textures/S6_Textures.JPG" alt="Textures in WebGL">
-                </a>
+                <canvas id="glcanvas3" ></canvas>
+                <script src="/img/WebGL_Basics/gl-matrix.js"></script>
+                <script src="/img/WebGL_Basics/S6_Textures/sources.js"></script>
+                <script src="/img/WebGL_Basics/S6_Textures/S6_Textures.JPG"></script>
+                <script src="/img/WebGL_Basics/S6_Textures/initShaderProgram.js"></script>
+                <script src="/img/WebGL_Basics/S6_Textures/loadShader.js"></script>
+                <script src="/img/WebGL_Basics/S6_Textures/initBuffers.js"></script>
+                <script src="/img/WebGL_Basics/S6_Textures/drawScene.js"></script>
+                <script src="/img/WebGL_Basics/S6_Textures/webgl-demo.js"></script>
+
                 <a href="" class="btn-light">
                     <i class="fas fa-eye"></i> Textures in WebGL
                 </a>
@@ -64,9 +90,14 @@
             </div>
             <!-- 4 S5_3D_Objects -->
             <div class="item">
-                <a target="_blank" href="img/WebGL_Basics/S5_3D_Objects/S5_3D_Objects.html">
-                    <img src="img/WebGL_Basics/S5_3D_Objects/S5_3D_Objects.JPG" alt="S5_3D_Objects">
-                </a>
+                <canvas id="glcanvas4" ></canvas>
+                <script src="/img/WebGL_Basics/gl-matrix.js"></script>
+                <script src="/img/WebGL_Basics/S5_3D_Objects/source.js"></script>
+                <script src="/img/WebGL_Basics/S5_3D_Objects/initShaderProgram.js"></script>
+                <script src="/img/WebGL_Basics/S5_3D_Objects/loadShader.js"></script>
+                <script src="/img/WebGL_Basics/S5_3D_Objects/initBuffers.js"></script>
+                <script src="/img/WebGL_Basics/S5_3D_Objects/drawScene.js"></script>
+                <script src="/img/WebGL_Basics/S5_3D_Objects/webgl-demo.js"></script>
                 <a href="" class="btn-light">
                     <i class="fas fa-eye"></i> 3D_Objects
                 </a>
