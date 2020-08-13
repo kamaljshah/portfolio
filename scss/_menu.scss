@@ -14,6 +14,17 @@
         background: set-text-color($primary-color);
         @include easeOut;
     }
+    
+    // display the text menu
+    .menu-heading {
+        width: 28px;
+        height: 15 px;
+        display: flex;
+        float: right;
+        padding-right: 10px;
+        margin: 10px 10px 10px 10px;
+        background: set-text-color($primary-color);
+    }
 
     // Rotate Into X With Menu lines
     &.close {
