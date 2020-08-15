@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Access Database C# file</title>
+  <meta http-equiv="generator" content="CoDocker v00.90 Beta (www.OfItselfSo.com)" />
+  <meta name="created" content="Sat, Aug 15, 2020" />
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="CoDocker.css" >
+</head>
+
+<body>
+<div class="OISHTMLPageBanner">
+
+<div class="OISBannerContent"><span class="OISBannerLabel">File:</span> Access.cs<BR/>
+<span class="OISBannerLabel">Created by:</span> Kamal Shah<BR/>
+</div> <!--bannerContent-->
+</div> <!--OISHTMLPageBanner-->
+
+
+<div class="OISCSFileSection">
+<pre class="csharpcode">
+<span class="kwrd">using</span> System;
+<span class="kwrd">using</span> System.Collections.Generic;
+<span class="kwrd">using</span> System.Text;
+<span class="kwrd">using</span> System.Data.OleDb;
+<span class="kwrd">using</span> System.Data;
+
+<span class="kwrd">namespace</span> DatabaseServer
+{
+    <span class="kwrd">public</span> <span class="kwrd">class</span> Access : Database
+    {
+        <span class="rem">//private string accessConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Documents and Settings\\All Users\\Application Data\\#######\\#######\\Common Files\\#######.#######.mdb";</span>
+
+
+        <span class="rem">//public override IDbConnection Open(string connectionString)</span>
+        <span class="rem">//{</span>
+
+        <span class="rem">//    return connection;</span>
+
+        <span class="rem">//}</span>
+
+        <span class="kwrd">public</span> <span class="kwrd">override</span> IDbConnection CreateConnection()
+        {
+            OleDbConnection DbConnection = <span class="kwrd">new</span> OleDbConnection();
+
+            <span class="kwrd">return</span> DbConnection;
+        }
+    }
+}
+</pre></div> <!-- OISCSFileSection-->
+
+<div class="OISHTMLPageFooter">
+
+
+</div> <!--OISHTMLPageFooter-->
+</body>
+</html>

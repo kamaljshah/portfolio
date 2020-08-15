@@ -283,6 +283,36 @@ main {
   left: 50%;
   transform: translate(-50%, -50%); }
 
+.collapsible {
+  background-color: #444;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px; }
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #444; }
+
+.active, .collapsible:hover {
+  background-color: #1ae7ee; }
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px; }
+
+.active:after {
+  content: "\2212"; }
+
 .WebGL_projects {
   display: grid;
   grid-gap: 0.7rem;
